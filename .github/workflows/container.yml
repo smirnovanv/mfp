@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - module-61
     paths:
       - 'packages/container/**'
 
@@ -17,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - users: actions/checkout@v2
+      - uses: actions/checkout@v2
       - run: npm install
       - run: npm run build
 
