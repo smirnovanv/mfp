@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - module-61
     paths:
       - 'packages/container/**'
 
